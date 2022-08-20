@@ -49,5 +49,10 @@ allprojects {
         }
         google()
         maven { url 'https://www.jitpack.io' }
+
+        // Add to Detox
+        maven {
+            url "$rootDir/../node_modules/detox/Detox-android"
+        }
     }
 }
